@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>SocialGrow</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+  </script>
+</head>
+
+<body style="background-color: #001321;">
+  <nav class="navbar navbar-dark navbar-expand-lg sticky-top" style="background-color: #001321;">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color: white; font-size: 150%" href="#">SocialGrow</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" style="color: white;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: white;" href="#features">Features</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+
+          <%if (passedUserID > 0){%>
+            <a href="/dashboard" class="btn" style="color: white; background-color: #046b72;">Dashboard</a>
+          <%} else {%>
+            <a href="/login" class="btn" style="color: white; background-color: #046b72;">Login</a>
+            <a href="/register" class="btn" style="color: white; background-color: #046b72;">Register</a>
+          <%}%>
+
+          <a href="/discord" class="btn" style="background-color: white;"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="" style="width: 40px;"></a>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="p-2 bd-highlight text-center">
+    <h1 class="text" style="max-width: 1200px; margin: auto; padding-top: 60px; color: #0fcbac;">Blow up your social media page with a click of a button.</h1>
+    <h2 class="text" style="max-width: 1200px; margin: auto; padding-top: 10px; padding-left: 20px; padding-right: 20px; padding-bottom: 10px; color: white;">At SocialGrow, we can boost your Instagram to the next level with <br><strong>instantly
+        delivered
+        followers</strong>.</h2>
+  </div>
+
+  <div class="p-5" id="pricing">
+    <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
+      <div class="col">
+        <div class="card h-100 border border-white" style="background-color: #001d32; color: white;">
+          <div class="card-header" style="background-color: #0fcbac;">Save 0%</div>
+          <div class="card-body">
+            <h2 class="card-title text-center pt-3">1,000 Followers</h2>
+            <h3 class="card-text text-center pt-3 pb-3">$10.00</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border border-white" style="background-color: #001d32; color: white;">
+          <div class="card-header" style="background-color: #0fcbac;">Save 10%</div>
+          <div class="card-body">
+            <h2 class="card-title text-center pt-3">5,000 Followers</h2>
+            <h3 class="card-text text-center pt-3 pb-3">$19.00</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border border-white" style="background-color: #001d32; color: white;">
+          <div class="card-header" style="background-color: #0fcbac;">Save 20%</div>
+          <div class="card-body">
+            <h2 class="card-title text-center pt-3">10,000 Followers</h2>
+            <h3 class="card-text text-center pt-3 pb-3">$80.00</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border border-white" style="background-color: #043d5e; color: white;">
+          <div class="card-header" style="background-color: #0fcbac;">Save 33%</div>
+          <div class="card-body">
+            <h2 class="card-title text-center pt-3">25,000 Followers</h2>
+            <h3 class="card-text text-center pt-3 pb-3">$133.00</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a id="features"></a>
+  </div>
+
+
+  <div class="text-center mx-auto pt-5 w-50">
+    <h2 style="color: #0fcbac;">Why should I buy Instagram followers?</h2>
+    <p style="font-size: 24px; color: white;">Your follower count determines your clout level on your online presence. SocialGrow makes increasing your recognition easier than ever before.</p>
+  </div>
+
+  <div class="p-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4 p-5">
+      <div class="col">
+        <div class="card h-100" style="background-color: #001321; border-color: #046b72; color: white;">
+          <div class="card-body">
+            <h2 class="card-title text-center pt-3" style="height: 40%;">Instant Delivery</h2>
+            <p class="card-text text-center pt-2 pb-3" style="font-size: 1.25rem;">They start coming in as soon as you purchase.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: #001321; border-color: #046b72; color: white;">
+          <div class="card-body">
+            <h2 class="card-title text-center pt-3" style="height: 40%;">Quality Followers</h2>
+            <p class="card-text text-center pt-2 pb-3" style="font-size: 1.25rem;">High retention rate!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="background-color: #001321; border-color: #046b72; color: white;">
+          <div class="card-body">
+            <h2 class="card-title text-center pt-3" style="height: 40%;">24/7 Support</h2>
+            <p class="card-text text-center pt-2 pb-3" style="font-size: 1.25rem;">We're here to help with any issues.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <footer class="text-center text-white" style="background-color: #041424">
+      <div class="container">
+        <section class="mt-5">
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="/aboutus" class="text-white" style="text-decoration: none;">About us</a>
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="/faq" class="text-white" style="text-decoration: none;">FAQ</a>
+              </h6>
+            </div>
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="/contact" class="text-white" style="text-decoration: none;">Contact</a>
+              </h6>
+            </div>
+          </div>
+        </section>
+        <hr class="my-3" />
+        <section class="mb-4 mt-4">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p class="mb-0">
+                Start growing your influence with SocialGrow.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright:
+        <a class="text-white">SocialGrow</a>
+      </div>
+    </footer>
+
+</body>
+
+</html>

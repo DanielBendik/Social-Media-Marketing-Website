@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>FAQ</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <style>
+
+    h2 {
+      margin: 20px auto 80px;
+      text-align: center;
+      letter-spacing: 2px;
+      line-height: 1.5;
+    }
+
+    details {
+      width: 75%;
+      min-height: 5px;
+      max-width: 700px;
+      padding: 45px 70px 45px 45px;
+      margin: 0 auto;
+      position: relative;
+      font-size: 22px;
+      border: 1px solid white;
+      border-radius: 15px;
+      box-sizing: border-box;
+      transition: all .3s;
+    }
+
+    details+details {
+      margin-top: 20px;
+    }
+
+    details[open] {
+      min-height: 50px;
+      background-color: #046b72;
+      box-shadow: 2px 2px 20px white;
+    }
+
+    details p {
+      margin-top: 16px;
+      color: white;
+      font-weight: 300;
+    }
+
+    summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    summary:focus {
+      outline: none;
+
+    }
+
+    summary:focus::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+    }
+
+    summary::-webkit-details-marker {
+      display: none
+    }
+
+    .control-icon {
+
+      transition: .3s ease;
+      pointer-events: none;
+    }
+
+    .control-icon-close {
+      display: none;
+    }
+
+    details[open] .control-icon-close {
+      display: initial;
+      transition: .3s ease;
+    }
+
+    details[open] .control-icon-expand {
+      display: none;
+    }
+  </style>
+
+</head>
+
+
+  <nav class="navbar navbar-expand-lg" style="background-color: #001321;">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color: white; font-size: 150%" href="../">SocialGrow</a>
+    </div>
+  </nav>
+
+<body style="background-color: #001321; color: white;">
+
+  <h2>Frequently Asked Questions</h2>
+
+  <div style="visibility: hidden; position: absolute; width: 0px; height: 0px;">
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <symbol viewBox="0 0 24 24" id="expand-more">
+        <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </symbol>
+      <symbol viewBox="0 0 24 24" id="close">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+      </symbol>
+    </svg>
+  </div>
+
+  <details>
+    <summary>
+      How many followers can I buy?
+      <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+      </svg>
+      <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+      </svg>
+    </summary>
+    <p>Up to 250,000.</p>
+  </details>
+
+  <details>
+
+    <summary>
+      How quickly will they come in?
+      <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+      </svg>
+      <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+      </svg>
+    </summary>
+    <p>The followers will come in at a rate of around 1,000 an hour.</p>
+  </details>
+
+  <details>
+    <summary>
+      Do you accept Bitcoin?
+      <svg class="control-icon control-icon-expand" width="24" height="24" role="presentation">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#expand-more" />
+      </svg>
+      <svg class="control-icon control-icon-close" width="24" height="24" role="presentation">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#close" />
+      </svg>
+    </summary>
+    <p>Yes, we also accept Ethereum and Litecoin.</p>
+  </details>
+
+</body>
+
+</html>
